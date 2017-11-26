@@ -1,8 +1,8 @@
-PHP_ARG_ENABLE(hello, whether to enable Hello,
-[ --enable-hello   Enable Hello])
+PHP_ARG_ENABLE(phpSiteInfo, whether to enable phpSiteInfo,
+[ --enable-siteinfoParser   Enable siteinfoParser])
  
-if test "$PHP_HELLO" = "yes"; then
-  AC_DEFINE(HAVE_HELLO, 1, [Whether you have Hello World])
-  PHP_NEW_EXTENSION(hello, hello.c, $ext_shared)
+if test "$PHP_phpSiteInfo" = "yes"; then
+  AC_DEFINE(HAVE_PHPSITEINFO, 1, [Whether you have PHPSITEINFO])
+  PHP_NEW_EXTENSION(phpsiteinfo, phpSiteInfo.c, $ext_shared)
 fi
 
